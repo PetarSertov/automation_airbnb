@@ -1,0 +1,8 @@
+page_objects\HomePage.class
+entities\ReservationWidgetDetails.class
+utils\TestObjectFactory.class
+widget_objects\ReservationWidget.class
+utils\MonthsEnum.class
+page_objects\BasePage.class
+utils\Months.class
+utils\Randomiser.class

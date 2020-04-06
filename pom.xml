@@ -96,7 +96,7 @@
                 <version>2.22.0</version>
                 <configuration>
                     <includes>
-                        <include>**/serenity/TestRunner.java</include>
+                        <include>**/TestRunner.java</include>
                     </includes>
                 </configuration>
                 <executions>
