@@ -11,7 +11,7 @@ public class ReservationActions extends BaseActions {
 
     public void prepareSearchingDetails(ReservationWidgetDetails reservationWidgetDetails) {
         fillsFieldWithData(PLACE_LOCATOR, reservationWidgetDetails.getPlace());
-
+        clicksOn(reservationWidget.checkinLocator);
     }
 
 
