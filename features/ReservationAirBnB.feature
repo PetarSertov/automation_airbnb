@@ -1,7 +1,7 @@
 Feature: Reservation at AirBnB
 
   Scenario: Successful Registration
-    Given John is on bg.airBnB "Home Page"
+    Given John is on AirBnB "Home Page"
     When John enters his search details:
       | place           | startingAfterDays | vacationDaysNumber | numberOfAdults | numberOfKids |
       | Bali, Indonesia | 5                 | 7                  | 2              | 1            |

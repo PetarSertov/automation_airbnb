@@ -1,0 +1,3 @@
+page_objects\HomePage.class
+page_objects\BasePage.class
+widget_objects\BaseReservationWidget.class
