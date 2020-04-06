@@ -5,13 +5,9 @@ import com.airbnb.bg.steps.libraries.ReservationActions;
 import cucumber.api.Transpose;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
-import entities.ReservationWidgetDetails;
 import net.thucydides.core.annotations.Steps;
 
-import java.time.LocalDate;
 import java.util.Map;
-
-import static utils.TestObjectFactory.*;
 
 
 public class ReservationStepsDefinition {
@@ -30,6 +26,7 @@ public class ReservationStepsDefinition {
     @When("^John enters his search details:$")
     public void fillSearchingDetails(@Transpose Map<String, String> rawData) {
         if (rawData != null) {
+            reservationActions.completeSearchingDetails(rawData);
 
             //ReservationWidgetDetails reservationWidgetDetails = prepareTestObjectFrom(ReservationWidgetDetails.class, rawData);
             //reservationActions.prepareSearchingDetails(reservationWidgetDetails);

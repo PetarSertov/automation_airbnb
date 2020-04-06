@@ -1,7 +1,8 @@
 package entities;
 
+import utils.MonthsEnum;
+
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 public class ReservationWidgetDetails {
 
@@ -12,9 +13,7 @@ public class ReservationWidgetDetails {
     private int vacationDaysNumber;
     private int addNumberOfAdults;
     private int addNumberOfKids;
-
     private LocalDate today = LocalDate.now();
-
 
     public int getStartingAfterDays() {
         return startingAfterDays;
@@ -56,8 +55,8 @@ public class ReservationWidgetDetails {
 
     public void setCheckOutDate(String checkOutDate)
     {
-        LocalDate localDateTime = today.plusDays(getStartingAfterDays()).plusDays(getVacationDaysNumber());
-        this.checkOutDate = localDateTime.toString();
+        LocalDate checkOutDateCalculation = today.plusDays(getStartingAfterDays()).plusDays(getVacationDaysNumber());
+        this.checkOutDate = checkOutDateCalculation.toString().split("-")[0];
 
     }
 

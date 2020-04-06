@@ -41,6 +41,11 @@ public class BaseActions {
                 data);
     }
 
+    @Step
+    protected void clicksOn(WebElementFacade buttonOrLink) {
+        buttonOrLink.waitUntilClickable()
+                .click();
+    }
 
 
 }
