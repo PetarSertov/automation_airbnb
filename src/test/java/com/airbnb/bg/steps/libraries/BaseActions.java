@@ -17,9 +17,12 @@ public class BaseActions {
     public void open(String pageName) {
 
         switch (pageName.toLowerCase().trim()) {
+
             case "homepage":
                 this.homePage.open();
+
                 break;
+
             default:
                 throw new PendingStepException( "Not implemented for this item: " + pageName );
 
@@ -47,5 +50,20 @@ public class BaseActions {
                 .click();
     }
 
+    @Step
+    protected void clicksOnTimes(WebElementFacade buttonOrLink, int timesToClick) {
+        for (int i = 0; i < timesToClick; i++) {
+            buttonOrLink.waitUntilClickable()
+                    .click();
+        }
+    }
+
+    @Step("Selects '{1}' item from drop down {0}")
+    protected void selectsFromDropDownAnItemByVisibleText(WebElementFacade dropDownElement,
+                                                          String itemValue) {
+        if (itemValue != null) {
+            dropDownElement.selectByVisibleText(itemValue);
+        }
+    }
 
 }

@@ -2,19 +2,35 @@ package widget_objects;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.openqa.selenium.By;
+import page_objects.BasePage;
 
-public class ReservationWidget {
+public class ReservationWidget extends BasePage {
 
-    public static final By PLACE_LOCATOR = By.cssSelector("input[name='query']");
-    public static final By GUESTS_BUTTON_LOCATOR = By.cssSelector("button#lp-guestpicker");   //click to open; click to close;
-    public static final By ADD_ADULT_BUTTON_LIST_LOCATOR = By.cssSelector("[aria-labelledby$='search_bar-adults'] button");
-    public static final By ADD_KID_BUTTON_LIST_LOCATOR = By.cssSelector("[aria-labelledby$='search_bar-children'] button");
-    public static final By FORM_SUBMIT_BUTTON_LOCATOR = By.cssSelector("button[type='submit']");
+    @FindBy(css = "input[name=query]")
+    public WebElementFacade placeField;
+
+    @FindBy(css = "button#lp-guestpicker")
+    public WebElementFacade guestsPickerDropDown; //click to open; click to close
+
+    @FindBy(css = "[aria-labelledby$='search_bar-adults'] button [aria-label='add']")
+    public WebElementFacade addAdultButton;
+
+    @FindBy(css = "[aria-labelledby$='search_bar-children'] button [aria-label='add']")
+    public WebElementFacade addKidButton;
+
+    @FindBy(css = "button[type='submit']")
+    public WebElementFacade formSubmitButton;
 
     @FindBy(css = "input[name='checkin']")
     public WebElementFacade checkinLocator;
 
     @FindBy(css = "input[name='checkout']")
     public WebElementFacade checkoutLocator;
+
+    @FindBy(css = "span")
+    public WebElementFacade selectDestination;
+
+    @FindBy(css = "#filter-panel-save-button")
+    public WebElementFacade saveGuestsPickerButton;
+
 }
