@@ -14,9 +14,9 @@ public class CalendarWidget extends BasePage {
     DateFormat dateFormat = new SimpleDateFormat("dd");
     Date date = new Date();
     int currentDay = Integer.parseInt(dateFormat.format(date));
-    int checkinDay;
+    int checkInDay;
     int checkoutDay;
-    int indexOfCheckinDayDay;
+    int indexOfCheckInDay;
 
     @FindBy(css = "td[aria-disabled='false'][role='button']")
     List<WebElementFacade> days;
@@ -26,11 +26,11 @@ public class CalendarWidget extends BasePage {
     WebElementFacade nextMonthButton;
 
 
-    public void clicksOnCheckinDate(int numberOfDays) {
-        indexOfCheckinDayDay = numberOfDays - 1;
-        checkinDay = currentDay + numberOfDays;
+    public void clicksOnCheckInDate(int numberOfDays) {
+        indexOfCheckInDay = numberOfDays - 1;
+        checkInDay = currentDay + numberOfDays;
 
-        if (currentDay > checkinDay) {
+        if (currentDay > checkInDay) {
             nextMonthButton.waitUntilClickable().click();
         }
         days.get(numberOfDays - 1).waitUntilClickable().click();
@@ -38,9 +38,9 @@ public class CalendarWidget extends BasePage {
     }
 
     public void clicksOnCheckoutDate(int numberOfDays) {
-        int indexOfCheckoutDay = (numberOfDays - 1) + indexOfCheckinDayDay;
+        int indexOfCheckoutDay = (numberOfDays - 1) + indexOfCheckInDay;
 
-        checkoutDay = checkinDay + indexOfCheckoutDay;
+        checkoutDay = checkInDay + indexOfCheckoutDay;
 
         if (currentDay > checkoutDay) {
             nextMonthButton.waitUntilClickable().click();

@@ -2,6 +2,9 @@ package page_objects;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.*;
+
+import java.util.List;
 
 public class OffersPage extends BasePage {
 
@@ -19,4 +22,13 @@ public class OffersPage extends BasePage {
 
     @FindBy(css = "#menuItemButton-dynamicMoreFilters")
     public WebElementFacade moreFiltersButton;
+
+    //@FindBy(xpath = "//span[text()='5.0']")
+    public List<WebElementFacade> starsRatingList;
+
+
+    public List<WebElementFacade> getStarNumber(double stars) {
+        return starsRatingList = findAll(By.xpath("//span[text()=" + stars + "]"));
+    }
+
 }

@@ -1,4 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 101.86 s - in TestRunner
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 42.459 s <<< FAILURE! - in TestRunner
+Successful Registration(Reservation at AirBnB)  Time elapsed: 40.914 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JMQ6DF0', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Petar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55009}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b9e93b99f2429518b73e1cb12db2ebc5
+
+Successful Registration(Reservation at AirBnB)  Time elapsed: 40.915 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "the total calculated price is according to the days" is undefined
+
+Successful Registration(Reservation at AirBnB)  Time elapsed: 40.915 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "the selected period and guests number is displayed correctly" is undefined
+

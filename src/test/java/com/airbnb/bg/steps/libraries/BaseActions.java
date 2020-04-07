@@ -3,7 +3,9 @@ package com.airbnb.bg.steps.libraries;
 import net.serenitybdd.core.PendingStepException;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.webdriver.WebDriverFacade;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import page_objects.BasePage;
 import page_objects.HomePage;
 
@@ -51,7 +53,7 @@ public class BaseActions {
     }
 
     @Step
-    protected void clicksOnTimes(WebElementFacade buttonOrLink, int timesToClick) {
+    protected void clicksOnMultipleTimes(WebElementFacade buttonOrLink, int timesToClick) {
         for (int i = 0; i < timesToClick; i++) {
             buttonOrLink.waitUntilClickable()
                     .click();
@@ -63,6 +65,13 @@ public class BaseActions {
                                                           String itemValue) {
         if (itemValue != null) {
             dropDownElement.selectByVisibleText(itemValue);
+        }
+    }
+
+    @Step
+    protected void selectFilterCheckbox(WebElementFacade checkbox, boolean checked) {
+        if(checked){
+            checkbox.waitUntilClickable().click();
         }
     }
 

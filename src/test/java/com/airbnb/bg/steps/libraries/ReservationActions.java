@@ -2,14 +2,12 @@ package com.airbnb.bg.steps.libraries;
 
 import entities.MoreFiltersDetails;
 import entities.ReservationDetails;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import page_objects.OffersPage;
+import utils.OrdinalNumbers;
 import widget_objects.CalendarWidget;
 import widget_objects.MoreFiltersWidget;
 import widget_objects.ReservationWidget;
-
-import java.util.Map;
 
 public class ReservationActions extends BaseActions {
 
@@ -26,14 +24,14 @@ public class ReservationActions extends BaseActions {
         clicksOn(reservationWidget.selectDestination);
 
         clicksOn(reservationWidget.checkinLocator);
-        calendarWidget.clicksOnCheckinDate(reservationDetails.getStartingAfterDays());
+        calendarWidget.clicksOnCheckInDate(reservationDetails.getStartingAfterDays());
 
         clicksOn(reservationWidget.checkoutLocator);
         calendarWidget.clicksOnCheckoutDate(reservationDetails.getVacationDaysNumber());
 
         clicksOn(reservationWidget.guestsPickerDropDown);
-        clicksOnTimes(reservationWidget.addAdultButton, reservationDetails.getNumberOfAdults());
-        clicksOnTimes(reservationWidget.addKidButton, reservationDetails.getNumberOfKids());
+        clicksOnMultipleTimes(reservationWidget.addAdultButton, reservationDetails.getNumberOfAdults());
+        clicksOnMultipleTimes(reservationWidget.addKidButton, reservationDetails.getNumberOfKids());
         clicksOn(reservationWidget.saveGuestsPickerButton);
 
         clicksOn(reservationWidget.formSubmitButton);
@@ -50,13 +48,25 @@ public class ReservationActions extends BaseActions {
     @Step
     public void chooseMoreFilters(MoreFiltersDetails moreFiltersDetails) {
         clicksOn(offersPage.moreFiltersButton);
-        
-        clicksOn(moreFiltersWidget.addBathroomButton);
-        clicksOn(moreFiltersWidget.airConditionerCheckBox);
-        clicksOn(moreFiltersWidget.jacuzziCheckBox);
-        
+
+        clicksOnMultipleTimes(moreFiltersWidget.addBathroomButton, moreFiltersDetails.getNumberOfBathrooms());
+        selectFilterCheckbox(moreFiltersWidget.airConditionerCheckBox, moreFiltersDetails.isAirConditioner());
+        selectFilterCheckbox(moreFiltersWidget.jacuzziCheckBox, moreFiltersDetails.isJacuzzi());
+
         clicksOn(moreFiltersWidget.saveMoreFiltersButton);
 
     }
 
+    @Step
+    public void selectPlaceByStarRating(String elementIntoTheList, Double numbersOfStars) {
+
+        int ordinalNumbers = OrdinalNumbers.valueOf( elementIntoTheList.toUpperCase() )
+                .getValue();
+        offersPage.getStarNumber(numbersOfStars);
+        System.out.println("List size: " + offersPage.starsRatingList.size());
+        offersPage.starsRatingList.get(ordinalNumbers).click();
+        //clicksOn(offersPage.fiveStarsList.get(ordinalNumbers));
+
+
+    }
 }

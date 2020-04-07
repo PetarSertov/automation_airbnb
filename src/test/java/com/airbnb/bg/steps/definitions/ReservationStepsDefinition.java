@@ -3,7 +3,6 @@ package com.airbnb.bg.steps.definitions;
 import com.airbnb.bg.steps.libraries.BaseActions;
 import com.airbnb.bg.steps.libraries.ReservationActions;
 import cucumber.api.Transpose;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import entities.MoreFiltersDetails;
@@ -53,5 +52,12 @@ public class ReservationStepsDefinition {
         } else {
             System.out.println("Searching details are empty !!!");
         }
+    }
+
+    @When("^he selects the \"([^\"]*)\" place with \"([^\"]*)\" stars$")
+    public void selectPlaceByStar(String elementIntoTheList, Double numbersOfStars) {
+
+        reservationActions.selectPlaceByStarRating(elementIntoTheList, numbersOfStars);
+
     }
 }
