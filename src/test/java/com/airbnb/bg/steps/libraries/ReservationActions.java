@@ -3,6 +3,8 @@ package com.airbnb.bg.steps.libraries;
 import entities.MoreFiltersDetails;
 import entities.ReservationDetails;
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.actions.Scroll;
+import net.serenitybdd.screenplay.actions.ScrollTo;
 import net.thucydides.core.annotations.Step;
 import page_objects.OffersPage;
 import widget_objects.CalendarWidget;
@@ -50,13 +52,13 @@ public class ReservationActions extends BaseActions {
     @Step
     public void chooseMoreFilters(MoreFiltersDetails moreFiltersDetails) {
         clicksOn(offersPage.moreFiltersButton);
-        
         clicksOn(moreFiltersWidget.addBathroomButton);
-        clicksOn(moreFiltersWidget.airConditionerCheckBox);
-        clicksOn(moreFiltersWidget.jacuzziCheckBox);
-        
-        clicksOn(moreFiltersWidget.saveMoreFiltersButton);
 
+        Scroll.to(moreFiltersWidget.airConditionerCheckBox);
+        clicksOn(moreFiltersWidget.airConditionerCheckBox);
+
+        clicksOn(moreFiltersWidget.jacuzziCheckBox);
+        clicksOn(moreFiltersWidget.saveMoreFiltersButton);
     }
 
 }

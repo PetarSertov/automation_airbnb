@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Reservation at AirBnB" skipped="1" tests="1" time="97.78" timestamp="2020-04-07 02:35:40"><testcase name="Successful Registration"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Reservation at AirBnB" skipped="0" tests="1" time="45.69" timestamp="2020-04-07 04:23:53"><testcase name="Successful Registration"><error message="Timed out after 5 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 5 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown</error><system-err>Timed out after 5 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown&#13;
+com.airbnb.bg.steps.libraries.BaseActions.clicksOn(BaseActions.java:49)&#13;
+com.airbnb.bg.steps.libraries.ReservationActions.chooseMoreFilters(ReservationActions.java:58)&#13;
+com.airbnb.bg.steps.definitions.ReservationStepsDefinition.setMoreFilters(ReservationStepsDefinition.java:52)&#13;
+✽.he searches for a place with parameters:(features/ReservationAirBnB.feature:9)&#13;
+</system-err></testcase></testsuite>
