@@ -21,43 +21,42 @@ public class ReservationStepsDefinition {
     @Steps
     private ReservationActions reservationActions;
 
-    @Given("^John is on AirBnB \"([^\"]*)\"$")
+    @Given("^(?:.*) is on AirBnB \"([^\"]*)\"$")
     public void openPage(String pageName) {
         baseActions.open(pageName);
     }
 
 
-    @When("^John submits his search details:$")
-    public void fillSearchingDetails(@Transpose Map<String, String> rawData) {
-        if (rawData != null) {
-            ReservationDetails reservationDetails = prepareTestObjectFrom(ReservationDetails.class, rawData);
-            reservationActions.prepareSearchingDetails(reservationDetails);
+    @When("^(?:.*) submits his search details:$")
+    public void submitsSearchingDetailsWith(@Transpose Map<String, String> reservationData) {
+        if (reservationData != null) {
+            ReservationDetails reservationObject = prepareTestObjectFrom(ReservationDetails.class, reservationData);
+            reservationActions.prepareSearchingDetails(reservationObject);
         } else {
-            System.out.println("Searching details are empty !!!");
+            System.out.println("Searching details are empty!");
         }
 
 
     }
 
-    @When("^he sets the price range from \"([^\"]*)\" to \"([^\"]*)\" levs$")
+    @When("(?:.*) sets the price range from \"([^\"]*)\" to \"([^\"]*)\" levs$")
     public void setPriceRange(String fromPrice, String toPrice) {
         reservationActions.choosePriceRange(fromPrice, toPrice);
     }
 
-    @When("^he searches for a place with parameters:$")
-    public void setMoreFilters(@Transpose Map<String, String> rawData) {
-        if (rawData != null) {
-            MoreFiltersDetails moreFiltersDetails = prepareTestObjectFrom(MoreFiltersDetails.class, rawData);
-            reservationActions.chooseMoreFilters(moreFiltersDetails);
+    @When("^(?:.*) searches for a place with parameters:$")
+    public void setMoreFilters(@Transpose Map<String, String> filtersData) {
+        if (filtersData != null) {
+            MoreFiltersDetails filtersObject = prepareTestObjectFrom(MoreFiltersDetails.class, filtersData);
+            reservationActions.chooseMoreFilters(filtersObject);
         } else {
-            System.out.println("Searching details are empty !!!");
+            System.out.println("Searching details are empty!");
         }
     }
 
-    @When("^he selects the \"([^\"]*)\" place with \"([^\"]*)\" stars$")
-    public void selectPlaceByStar(String elementIntoTheList, Double numbersOfStars) {
-
-        reservationActions.selectPlaceByStarRating(elementIntoTheList, numbersOfStars);
+    @When("^(?:.*) selects the first offer with \"([^\"]*)\" stars$")
+    public void selectPlaceByStar(Double numbersOfStars) {
+        reservationActions.selectPlaceByStarRating(numbersOfStars);
 
     }
 }

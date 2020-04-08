@@ -1,6 +1,7 @@
 package com.airbnb.bg.steps.libraries;
 
 import entities.MoreFiltersDetails;
+import entities.OffersDetails;
 import entities.ReservationDetails;
 import net.thucydides.core.annotations.Step;
 import page_objects.OffersPage;
@@ -15,6 +16,7 @@ public class ReservationActions extends BaseActions {
     private CalendarWidget calendarWidget;
     private OffersPage offersPage;
     private MoreFiltersWidget moreFiltersWidget;
+    private OffersDetails offersDetails;
 
 
     @Step
@@ -58,15 +60,9 @@ public class ReservationActions extends BaseActions {
     }
 
     @Step
-    public void selectPlaceByStarRating(String elementIntoTheList, Double numbersOfStars) {
-
-        int ordinalNumbers = OrdinalNumbers.valueOf( elementIntoTheList.toUpperCase() )
-                .getValue();
-        offersPage.getStarNumber(numbersOfStars);
-        System.out.println("List size: " + offersPage.starsRatingList.size());
-        offersPage.starsRatingList.get(ordinalNumbers).click();
-        //clicksOn(offersPage.fiveStarsList.get(ordinalNumbers));
-
-
+    public void selectPlaceByStarRating(Double numbersOfStars) {
+        /*int ordinalNumber = OrdinalNumbers.valueOf(elementIntoTheList.toUpperCase())
+                .getValue();*/
+        offersDetails.findOfferWith(numbersOfStars);
     }
 }

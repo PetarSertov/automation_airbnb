@@ -11,3 +11,4 @@ entities\ReservationDetails.class
 page_objects\BasePage.class
 utils\Months.class
 widget_objects\MoreFiltersWidget.class
+entities\OffersDetails.class
