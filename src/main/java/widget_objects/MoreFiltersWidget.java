@@ -6,10 +6,10 @@ import page_objects.BasePage;
 
 public class MoreFiltersWidget extends BasePage {
 
-    @FindBy(css = "#filterItem-checkbox-amenities-5")
+    @FindBy(css = "label[for=filterItem-checkbox-amenities-5]")
     public WebElementFacade airConditionerCheckBox;
 
-    @FindBy(css = "#filterItem-checkbox-amenities-25")
+    @FindBy(css = "label[for=filterItem-checkbox-amenities-25]")
     public WebElementFacade jacuzziCheckBox;
 
     @FindBy(css = "button[aria-describedby*='bathrooms']:last-child")
