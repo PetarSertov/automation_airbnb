@@ -2,16 +2,11 @@ package com.airbnb.bg.steps.libraries;
 
 import entities.MoreFiltersDetails;
 import entities.ReservationDetails;
-import net.serenitybdd.core.pages.WebElementFacade;
-import net.serenitybdd.screenplay.actions.Scroll;
-import net.serenitybdd.screenplay.actions.ScrollTo;
 import net.thucydides.core.annotations.Step;
 import page_objects.OffersPage;
 import widget_objects.CalendarWidget;
 import widget_objects.MoreFiltersWidget;
 import widget_objects.ReservationWidget;
-
-import java.util.Map;
 
 public class ReservationActions extends BaseActions {
 
@@ -54,7 +49,6 @@ public class ReservationActions extends BaseActions {
         clicksOn(offersPage.moreFiltersButton);
         clicksOn(moreFiltersWidget.addBathroomButton);
 
-        Scroll.to(moreFiltersWidget.airConditionerCheckBox);
         clicksOn(moreFiltersWidget.airConditionerCheckBox);
 
         clicksOn(moreFiltersWidget.jacuzziCheckBox);

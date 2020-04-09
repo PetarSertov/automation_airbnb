@@ -3,7 +3,6 @@ package com.airbnb.bg.steps.definitions;
 import com.airbnb.bg.steps.libraries.BaseActions;
 import com.airbnb.bg.steps.libraries.ReservationActions;
 import cucumber.api.Transpose;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import entities.MoreFiltersDetails;
