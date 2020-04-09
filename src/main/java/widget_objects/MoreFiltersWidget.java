@@ -18,3 +18,4 @@ public class MoreFiltersWidget extends BasePage {
     @FindBy(css = "footer > button")
     public WebElementFacade saveMoreFiltersButton;
 }
+
