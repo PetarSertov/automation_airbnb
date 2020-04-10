@@ -1,43 +1,39 @@
 package entities;
 
-import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import page_objects.OffersPage;
 
 import java.util.List;
 
+
 public class OffersDetails extends OffersPage {
 
-    OffersPage offersPage;
-    int currentOfferIndex = 0;
-    boolean isElementContained = false;
+    int currentPage = 1;
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @FindBy(css = "div a[href^='/rooms/']")
-    public List<WebElementFacade> offersWebElementFacadeList;
-
-    public void findOfferWith(double offerStarNumber) {
-        checkIfOfferIsOnThisPage(offerStarNumber);
+    public void goToNextOffersPage() {
+        currentPage++;
+        navigationBar.findElement(By.cssSelector("[data-id='page-" + currentPage + "']")).click();
     }
 
-    public void checkIfOfferIsOnThisPage(double offerStarNumber) {
-        do {
-            isElementContained = offersWebElementFacadeList.get(currentOfferIndex).containsElements(By.xpath("//span[text()='" + offerStarNumber + "']"));
-            if (!isElementContained) {
-                offersPage.goToNextPage();
-            } else {
-                clickOnOffer(offerStarNumber);
-            }
-        } while (isElementContained);
-    }
-
-    public void clickOnOffer(double offerStarNumber) {
-        for (WebElementFacade currentOfferWebElementFacade : offersWebElementFacadeList) {
-            if (currentOfferWebElementFacade.containsElements(By.xpath("//span[text()='" + offerStarNumber + "']"))) {
-                currentOfferWebElementFacade.waitUntilClickable().click();
-                break;
-            }
+    public void selectOfferByRating(double offerRate) {
+        while (!doPageContainOfferWithRate(offerRate)) {
+            goToNextOffersPage();
         }
+        getOfferByRate(offerRate).click();
+
+    }
+
+    private WebElementFacade getOfferByRate(double offerRate) {
+        List<WebElementFacade> offerList = findAll(By.xpath("//*[@itemprop='itemListElement' and .//span[@aria-label] and .//span[text()='" + offerRate + "']]"));
+        return offerList.get(0);
+    }
+
+    private boolean doPageContainOfferWithRate(double offerRate) {
+        return this.containsElements(By.xpath("//*[@itemprop='itemListElement' and .//span[@aria-label] and .//span[text()='" + offerRate + "']]"));
     }
 
 }

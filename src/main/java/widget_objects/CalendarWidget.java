@@ -18,34 +18,19 @@ public class CalendarWidget extends BasePage {
     int checkoutDay;
     int indexOfCheckInDay;
 
-    @FindBy(css = "td[aria-disabled='false'][role='button']")
+    @FindBy(css = "td[aria-disabled='false']")
     List<WebElementFacade> days;
 
-
-    @FindBy(css = "div[role='button'][aria-label$='следващия месец.']")
-    WebElementFacade nextMonthButton;
-
-
-    public void clicksOnCheckInDate(int numberOfDays) {
-        indexOfCheckInDay = numberOfDays - 1;
-        checkInDay = currentDay + numberOfDays;
-
-        if (currentDay > checkInDay) {
-            nextMonthButton.waitUntilClickable().click();
-        }
-        days.get(numberOfDays - 1).waitUntilClickable().click();
-        System.out.println(days.get(numberOfDays - 1));
+    public void clicksOnCheckInDate(int startingAfterDays) {
+        indexOfCheckInDay = startingAfterDays - 1;
+        checkInDay = currentDay + startingAfterDays;
+        days.get(indexOfCheckInDay).waitUntilClickable().click();
     }
 
     public void clicksOnCheckoutDate(int numberOfDays) {
-        int indexOfCheckoutDay = (numberOfDays - 1) + indexOfCheckInDay;
-
+        int indexOfCheckoutDay = numberOfDays + indexOfCheckInDay;
         checkoutDay = checkInDay + indexOfCheckoutDay;
-
-        if (currentDay > checkoutDay) {
-            nextMonthButton.waitUntilClickable().click();
-        }
-
         days.get(indexOfCheckoutDay).waitUntilClickable().click();
     }
+
 }

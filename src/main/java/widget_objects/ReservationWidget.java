@@ -9,25 +9,19 @@ public class ReservationWidget extends BasePage {
     @FindBy(css = "input[name=query]")
     public WebElementFacade placeField;
 
-    @FindBy(css = "button#lp-guestpicker")
+    @FindBy(css = "form[role=search] button[aria-expanded=false]")
     public WebElementFacade guestsPickerDropDown; //click to open; click to close
 
-    @FindBy(css = "[aria-labelledby$='search_bar-adults'] button [aria-label='add']")
+    @FindBy(css = "button[aria-describedby$='stepper-adults']:last-child")
     public WebElementFacade addAdultButton;
 
-    @FindBy(css = "[aria-labelledby$='search_bar-children'] button [aria-label='add']")
+    @FindBy(css = "button[aria-describedby$='stepper-children']:last-child")
     public WebElementFacade addKidButton;
 
     @FindBy(css = "button[type='submit']")
     public WebElementFacade formSubmitButton;
 
-    @FindBy(css = "input[name='checkin']")
-    public WebElementFacade checkinLocator;
-
-    @FindBy(css = "input[name='checkout']")
-    public WebElementFacade checkoutLocator;
-
-    @FindBy(css = "span")
+    @FindBy(css = "#Koan-query__option-0")
     public WebElementFacade selectDestination;
 
     @FindBy(css = "#filter-panel-save-button")

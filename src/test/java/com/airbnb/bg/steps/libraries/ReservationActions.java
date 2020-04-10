@@ -25,16 +25,13 @@ public class ReservationActions extends BaseActions {
         fillsFieldWithData(reservationWidget.placeField, reservationDetails.getPlace());
         clicksOn(reservationWidget.selectDestination);
 
-        clicksOn(reservationWidget.checkinLocator);
         calendarWidget.clicksOnCheckInDate(reservationDetails.getStartingAfterDays());
 
-        clicksOn(reservationWidget.checkoutLocator);
         calendarWidget.clicksOnCheckoutDate(reservationDetails.getVacationDaysNumber());
 
         clicksOn(reservationWidget.guestsPickerDropDown);
         clicksOnMultipleTimes(reservationWidget.addAdultButton, reservationDetails.getNumberOfAdults());
         clicksOnMultipleTimes(reservationWidget.addKidButton, reservationDetails.getNumberOfKids());
-        clicksOn(reservationWidget.saveGuestsPickerButton);
 
         clicksOn(reservationWidget.formSubmitButton);
     }
@@ -63,6 +60,6 @@ public class ReservationActions extends BaseActions {
     public void selectPlaceByStarRating(Double numbersOfStars) {
         /*int ordinalNumber = OrdinalNumbers.valueOf(elementIntoTheList.toUpperCase())
                 .getValue();*/
-        offersDetails.findOfferWith(numbersOfStars);
+        offersDetails.selectOfferByRating(numbersOfStars);
     }
 }

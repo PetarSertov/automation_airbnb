@@ -1,17 +1,12 @@
 package page_objects;
 
+import entities.OffersDetails;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.*;
 
 public class OffersPage extends BasePage {
 
-    //int i;
-    //List<Integer> indexOfContainedElements = null;
-    int currentPage = 1;
-   // boolean isElementClicked = false;
-
-    public By byPageNumber = By.cssSelector("[data-id='page-" + currentPage + "']");
 
     @FindBy(css = "#price_filter_min")
     public WebElementFacade fromPriceField;
@@ -28,11 +23,21 @@ public class OffersPage extends BasePage {
     @FindBy(css = "#menuItemButton-dynamicMoreFilters")
     public WebElementFacade moreFiltersButton;
 
+    @FindBy(css = "'nav[data-id$='Pagination'] li:last-child'")
+    public WebElementFacade nextOffersPageButton;
+
     //@FindBy(css = "div a[href^='/rooms/']")
     //public List<WebElementFacade> offersList;
 
     @FindBy(css = "nav[data-id='SearchResultsPagination']")
     public WebElementFacade navigationBar;
+
+    public void goToNextOffersPage(){
+        nextOffersPageButton.waitUntilClickable().click();
+    }
+
+
+
 
     //public void findElementWithStars(double starNumber, int ordinalNumber) {
 //
@@ -57,10 +62,7 @@ public class OffersPage extends BasePage {
    //    }
    //}
 
-    public void goToNextPage() {
-        currentPage = currentPage + 1;
-        navigationBar.findElement(byPageNumber).click();
-    }
+
 
     //public void clickElementWithStars(double starNumber, int ordinalNumber) {
 //
