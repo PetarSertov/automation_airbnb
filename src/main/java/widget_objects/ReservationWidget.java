@@ -24,7 +24,7 @@ public class ReservationWidget extends BasePage {
     @FindBy(css = "#Koan-query__option-0")
     public WebElementFacade selectDestination;
 
-    @FindBy(css = "#filter-panel-save-button")
-    public WebElementFacade saveGuestsPickerButton;
+    @FindBy(css = "button[aria-expanded='true']")
+    public WebElementFacade numberOfGuests;
 
 }

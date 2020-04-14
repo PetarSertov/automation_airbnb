@@ -1,4 +1,6 @@
 com\airbnb\bg\steps\definitions\ReservationStepsDefinition.class
 com\airbnb\bg\steps\libraries\ReservationActions.class
 com\airbnb\bg\steps\libraries\BaseActions.class
+com\airbnb\bg\steps\libraries\OfferActions.class
 TestRunner.class
+com\airbnb\bg\steps\libraries\CalendarWidgetActions.class
