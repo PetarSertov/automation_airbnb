@@ -2,6 +2,7 @@ package com.airbnb.bg.steps.libraries;
 
 import entities.MoreFiltersDetails;
 import entities.ReservationDetails;
+import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
 import page_objects.ListOfOffersPage;
 import widget_objects.CalendarWidget;
@@ -11,44 +12,43 @@ import widget_objects.ReservationWidget;
 public class ReservationActions extends BaseActions {
 
     private ReservationWidget reservationWidget;
-    private CalendarWidgetActions calendarWidgetActions;
     private CalendarWidget calendarWidget;
-    private ListOfOffersPage listOfOffersPage;
     private MoreFiltersWidget moreFiltersWidget;
-    public String guests;
+    private ListOfOffersPage listOfOffersPage;
+
 
     @Step
     public void prepareSearchingDetails(ReservationDetails reservationDetails) {
 
         fillsFieldWithData(reservationWidget.placeField, reservationDetails.getPlace());
-        clicksOn(reservationWidget.selectDestination);
+        clicksOn(reservationWidget.selectDestinationFromDropDown);
 
-        calendarWidget.clicksOnCheckInDate(reservationDetails.getStartingAfterDays());
-        calendarWidget.clicksOnCheckoutDate(reservationDetails.getVacationDaysNumber());
+        calendarWidget.selectsCheckInDate(reservationDetails.getStartingAfterDays());
+        calendarWidget.selectsCheckOutDate(reservationDetails.getVacationDaysNumber());
 
-        //calendarWidgetActions.clicksOnCheckInDate(reservationDetails.getStartingAfterDays());
-        //calendarWidgetActions.clicksOnCheckoutDate(reservationDetails.getVacationDaysNumber());
 
         clicksOn(reservationWidget.guestsPickerDropDown);
         clicksOnMultipleTimes(reservationWidget.addAdultButton, reservationDetails.getNumberOfAdults());
         clicksOnMultipleTimes(reservationWidget.addKidButton, reservationDetails.getNumberOfKids());
 
-        guests = reservationWidget.numberOfGuests.getText();
+        Serenity.setSessionVariable("guests").to(reservationWidget.numberOfGuests.getText());
+        Serenity.setSessionVariable("checkInDate").to(calendarWidget.checkInDate);
+        Serenity.setSessionVariable("checkOutDate").to(calendarWidget.checkOutDate);
 
-        clicksOn(reservationWidget.formSubmitButton);
+        clicksOn(reservationWidget.submitReservationFormButton);
     }
 
     @Step
     public void choosePriceRange(String fromPrice, String toPrice) {
-        clicksOn(listOfOffersPage.priceRangeMenuItemButton);
+        clicksOn(listOfOffersPage.expandPriceRangeMenuItemButton);
         fillsFieldWithData(listOfOffersPage.fromPriceField, fromPrice);
         fillsFieldWithData(listOfOffersPage.toPriceField, toPrice);
-        clicksOn((listOfOffersPage.savePriceButton));
+        clicksOn(listOfOffersPage.savePriceFromMenuItemButton);
     }
 
     @Step
     public void chooseMoreFilters(MoreFiltersDetails moreFiltersDetails) {
-        clicksOn(listOfOffersPage.moreFiltersButton);
+        clicksOn(listOfOffersPage.expandMoreFiltersButton);
 
         clicksOnMultipleTimes(moreFiltersWidget.addBathroomButton, moreFiltersDetails.getNumberOfBathrooms());
         selectFilterCheckbox(moreFiltersWidget.airConditionerCheckBox, moreFiltersDetails.isAirConditioner());
@@ -58,14 +58,6 @@ public class ReservationActions extends BaseActions {
 
     }
 
-    /*
-    @Step
-    public void selectPlaceByStarRating(Double numbersOfStars) {
-        /*int ordinalNumber = OrdinalNumbers.valueOf(elementIntoTheList.toUpperCase())
-                .getValue();
-        selectOfferByRating(numbersOfStars);
-    }
-    */
 
     @Step
     public void selectOfferByRating(double offerRate) {

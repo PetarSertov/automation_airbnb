@@ -19,12 +19,12 @@ public class ReservationWidget extends BasePage {
     public WebElementFacade addKidButton;
 
     @FindBy(css = "button[type='submit']")
-    public WebElementFacade formSubmitButton;
+    public WebElementFacade submitReservationFormButton;
 
     @FindBy(css = "#Koan-query__option-0")
-    public WebElementFacade selectDestination;
+    public WebElementFacade selectDestinationFromDropDown;
 
-    @FindBy(css = "button[aria-expanded='true']")
+    @FindBy(css = "button[aria-expanded='true'] div:last-child")
     public WebElementFacade numberOfGuests;
 
 }

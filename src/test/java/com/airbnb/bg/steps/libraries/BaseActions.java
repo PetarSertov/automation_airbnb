@@ -3,11 +3,14 @@ package com.airbnb.bg.steps.libraries;
 import net.serenitybdd.core.PendingStepException;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
+import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import page_objects.BasePage;
 import page_objects.HomePage;
 import utils.WaitForEvent;
+
+import static page_objects.OfferPage.CURRENT_OFFER_CHECK_IN_DATE;
 
 
 public class BaseActions {
@@ -89,7 +92,7 @@ public class BaseActions {
     }
 
     @Step
-    public void acceptCookies() {
+    public void acceptAllCookies() {
         boolean isClicked = false;
         int tryOuts = 0;
 
@@ -116,7 +119,7 @@ public class BaseActions {
                 webElementFacade.waitUntilVisible();
                 isVisible = true;
             } catch (Throwable e) {
-                waitForEvent.sleep(1000);
+                WaitForEvent.sleep(500);
             }
         }
         return webElementFacade;
@@ -134,13 +137,30 @@ public class BaseActions {
                 element.findElement(by);
                 isVisible = true;
             } catch (Throwable e) {
-                waitForEvent.sleep(1000);
+                WaitForEvent.sleep(500);
             }
         }
         return element;
     }
 
-        @Step
+    @Step
+    public String waitWebElementToBeDisplayed(By by) {
+        int tryOuts = 0;
+        WebElement element = null;
+        String textFromElement = null;
+
+        while (textFromElement == null && tryOuts < 6) {
+            try {
+                tryOuts++;
+                textFromElement = element.findElement(by).getText();
+            } catch (Throwable e) {
+                WaitForEvent.sleep(300);
+            }
+        }
+        return textFromElement;
+    }
+
+    @Step
     public void navigateToLastTab() {
         basePage.goToLastTab();
     }

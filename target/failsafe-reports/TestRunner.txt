@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 38.014 s <<< FAILURE! - in TestRunner
-Successful Registration(Reservation at AirBnB)  Time elapsed: 36.444 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Expected condition failed: waiting for By.cssSelector: div[aria-label][role='button'] div div:last-child to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JMQ6DF0', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for By.cssSelector: div[aria-label][role='button'] div div:last-child to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JMQ6DF0', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
-Driver info: driver.version: unknown
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.8 s - in TestRunner
