@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10f620e6-1bed-434a-adc8-6e220948b44b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_objects/OfferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_objects/OfferPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/airbnb/bg/steps/definitions/ReservationStepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airbnb/bg/steps/definitions/ReservationStepsDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AirBnBAutomation-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AirBnBAutomation-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/page_objects/OfferPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page_objects/OfferPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/2020-04-14T17-15-53_100.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/TEST-TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/032d6af513042bab630a93dd523e39b5d48b7cb21912534b1808d09b533b51e2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/032d6af513042bab630a93dd523e39b5d48b7cb21912534b1808d09b533b51e2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/032d6af513042bab630a93dd523e39b5d48b7cb21912534b1808d09b533b51e2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/032d6af513042bab630a93dd523e39b5d48b7cb21912534b1808d09b533b51e2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0938587e776caafdb8cafae97a5c5e195685b0824f51dfb3fbc7fbd5b69f68cd.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0a37a134ab6d7841f9e7954637009ca52308cf0f3e68927ac80335998fcdecca.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0e1b7c27533d82061382f5bb5ff9559d138c8b83bb6c9c966f376d963da085ee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/1333f5b3f4f8beac204c7ee992105f3f7164784f8431654b084d47a2f4218637.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/15c167f48eaa00743c4dd9f3baa9726382eef4597a8cfc8eb15a9896c1ed905a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/16a9dae8aa7f336cfec872fb866d0ec7ca2e394d8d47280a31cb508c2eff9791.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/18f1c8bf7ed6d9181cd63f3cd9205dadf922918d7c26e4f367211bb699a3b344.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/1e16f3f3d585b923149df0d7cb6cec53764f2665f1195e3e2de3f7edd983ea62.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2aae2a8747ff2b5ed66a54d66a44dd61c01eb9bc8e5d0870b7c56a588f5b167c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/4841e950874ca3be78f756e6f5c157e5fff29f15c82db9ba9ead654e0924a379.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/494209e1f624364673b8c7b323ff123042e258ac79dce137235802f9ccca1fa8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/559b49811d063f1f68bbd8f689a01963bf228758591d67e0c08751bbfe74f00e.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/559b49811d063f1f68bbd8f689a01963bf228758591d67e0c08751bbfe74f00e.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/559b49811d063f1f68bbd8f689a01963bf228758591d67e0c08751bbfe74f00e.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/559b49811d063f1f68bbd8f689a01963bf228758591d67e0c08751bbfe74f00e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/55c3b623487797eb72ca04b553f404053664313271d4b4761c95d6fddd39707c.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/55c3b623487797eb72ca04b553f404053664313271d4b4761c95d6fddd39707c.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/55c3b623487797eb72ca04b553f404053664313271d4b4761c95d6fddd39707c.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/55c3b623487797eb72ca04b553f404053664313271d4b4761c95d6fddd39707c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5e0f14efe5e0e3457ddf5cd52a79e35271815b6ab094f96cea23199a89e0bb7b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/6379cf320cba2f00f01a742271b427ea760f3144fd86d9f6e4ca663f503804de.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/63f3510f14f4f75945e84c933bb677bf3a5ba707df71fb8ee2e192164c71e41f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/663f0754e0690da1827ef394e02fe7297e9797bbbcbe5a391da20cb9c869339a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/71bb9d661211042b0249866d484d4eaf83ec640719819c035ae5da570c426265.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/78502c31442c6f3b521ba3c5820114b4337a4a1c8362df796c7baff4dfa95f90.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/9c07c489e804cfd1b20da7d9cdeaf21625059026df2b4b115097c10bae93d359.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/9fabba682fb3ac45c53f3883c5eba44b0f25a18ca6c4a80229f6778e94fb47cd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/a71090cf20ce3bc6a25fc59d48ddacfb61029828043078d0ca2b11dcf1401dad.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/a71090cf20ce3bc6a25fc59d48ddacfb61029828043078d0ca2b11dcf1401dad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ae22ff16b8a062242e7bd9403be1f3a27e3f8f724077844bc121da7a7fd24086_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b67fb02046f44e1aaf4a09f3e4eaffe7b3907b215dde8177419463993c00067a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b67fb02046f44e1aaf4a09f3e4eaffe7b3907b215dde8177419463993c00067a.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b67fb02046f44e1aaf4a09f3e4eaffe7b3907b215dde8177419463993c00067a.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b67fb02046f44e1aaf4a09f3e4eaffe7b3907b215dde8177419463993c00067a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b693e9ed844a41b73520e8369ecb818c54fefe1614e9d83bed676d5e759c2190.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b693e9ed844a41b73520e8369ecb818c54fefe1614e9d83bed676d5e759c2190.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b693e9ed844a41b73520e8369ecb818c54fefe1614e9d83bed676d5e759c2190.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b693e9ed844a41b73520e8369ecb818c54fefe1614e9d83bed676d5e759c2190.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/build-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/build-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/capabilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/capabilities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/d9acb90bff0644ff16886d950c6145d7526e733dd4a3c6f01dd7c2d9b4d81862.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/e2e0b165c7b2cc2eb95e74f9c10559719eb0e4166485d3494ad585be15b6ae28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/f79e331e60de5ef604cf623631b5565408677a4055acb26acc354d4638bce6bc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/f8e435a22c23d66eaae0d0af13caee32879321aa25c701b157e8cfe6aff5fe9b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/fd1f7d4ddc093c3b70a226f724dd441750dc98c50ec345d45a026c2f0a91e5b0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/fe9e47ac7208295d9f9475aaab668bb924ff607950cc43f74f6c8f3e1023ae58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/summary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/airbnb/bg/steps/definitions/ReservationStepsDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/airbnb/bg/steps/definitions/ReservationStepsDefinition.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aWaNTDPbPHPuEbkoknJeqK3r6Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Maven.TestRunner">
+    <configuration name="Debugger" type="JUnit" factoryName="JUnit">
+      <module name="automation_airbnb" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="verify" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Debugger" />
+      <item itemvalue="Maven.TestRunner" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10f620e6-1bed-434a-adc8-6e220948b44b" name="Default Changelist" comment="" />
+      <created>1586853763657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586853763657</updated>
+      <workItem from="1586853765598" duration="17712000" />
+      <workItem from="1586879983000" duration="4000" />
+      <workItem from="1586929786495" duration="7576000" />
+      <workItem from="1586956544814" duration="79000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="294" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586874779679">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="294" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586874779679" />
+    <state x="569" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586856438924">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="569" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586856438924" />
+    <state x="477" y="389" width="931" height="548" key="#xdebugger.evaluate" timestamp="1586870915355">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="477" y="389" width="931" height="548" key="#xdebugger.evaluate/0.0.1680.1010@0.0.1680.1010" timestamp="1586870915355" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1586956409211">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1586956409211" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1586956409211">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1586956409211" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1586956409211">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1586956409211" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1586956409211">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1586956409211" />
+    <state width="1637" height="336" key="GridCell.Tab.1.bottom" timestamp="1586875768221">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1586875768221" />
+    <state width="1637" height="336" key="GridCell.Tab.1.center" timestamp="1586875768221">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1586875768221" />
+    <state width="1637" height="336" key="GridCell.Tab.1.left" timestamp="1586875768220">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1586875768220" />
+    <state width="1637" height="336" key="GridCell.Tab.1.right" timestamp="1586875768221">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1586875768221" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1586871250036">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1586871250036" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="reservationActions.guest" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/automation_airbnb$Debugger.ic" NAME="Debugger Coverage Results" MODIFIED="1586858987396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
