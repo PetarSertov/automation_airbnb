@@ -1,4 +1,0 @@
-com\airbnb\bg\steps\definitions\ReservationStepsDefinition.class
-com\airbnb\bg\steps\libraries\ReservationActions.class
-com\airbnb\bg\steps\libraries\BaseActions.class
-TestRunner.class
