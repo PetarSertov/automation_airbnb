@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Reservation at AirBnB" skipped="0" tests="1" time="42.54" timestamp="2020-04-14 05:15:53"><testcase name="Reservation @ Bali"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Reservation at AirBnB" skipped="0" tests="1" time="92.89" timestamp="2020-04-15 09:21:06"><testcase name="Reservation @ Bali"><error message="Expected condition failed: waiting for By.cssSelector: input[aria-label='Checkout'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for By.cssSelector: input[aria-label='Checkout'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.cssSelector: input[aria-label='Checkout'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: driver.version: unknown&#13;
+com.airbnb.bg.steps.definitions.ReservationStepsDefinition.validateGuestsNumberAndVacationPeriod(ReservationStepsDefinition.java:146)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

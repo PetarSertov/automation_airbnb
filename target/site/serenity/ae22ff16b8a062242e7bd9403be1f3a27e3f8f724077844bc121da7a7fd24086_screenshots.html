@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 14-04-2020 17:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-04-2020 09:21</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Reservation @ Bali
+                                <span class="error-color">Reservation @ Bali
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,56 +214,91 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Timeout exception: Expected condition failed: waiting for By.cssSelector: input[aria-label='Checkout'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'Driver info: driver.version: unknownBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-1557LD7', ip: '192.168.100.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.TimeoutException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.airbnb.bg.steps.definitions.ReservationStepsDefinition.validateGuestsNumberAndVacationPeriod(ReservationStepsDefinition.java:146)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5830593148176139789.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="fe9e47ac7208295d9f9475aaab668bb924ff607950cc43f74f6c8f3e1023ae58.png" title=" Given John is on AirBnB &quot;homepage&quot;" width="1680"/>
-                <img src="fe9e47ac7208295d9f9475aaab668bb924ff607950cc43f74f6c8f3e1023ae58.png" title=" Open: homepage" width="1680"/>
-                <img src="fe9e47ac7208295d9f9475aaab668bb924ff607950cc43f74f6c8f3e1023ae58.png" title=" Given John is on AirBnB &quot;homepage&quot; (completed)" width="1680"/>
-                <img src="0e1b7c27533d82061382f5bb5ff9559d138c8b83bb6c9c966f376d963da085ee.png" title=" When John submits his search details:
+                <img src="39df7e21a38eebd3ba31ee644e38e866fd39ef882e6ec84db1dd0c1efd9e6e0a.png" title=" Given John is on AirBnB &quot;homepage&quot;" width="1680"/>
+                <img src="39df7e21a38eebd3ba31ee644e38e866fd39ef882e6ec84db1dd0c1efd9e6e0a.png" title=" Open: homepage" width="1680"/>
+                <img src="39df7e21a38eebd3ba31ee644e38e866fd39ef882e6ec84db1dd0c1efd9e6e0a.png" title=" Given John is on AirBnB &quot;homepage&quot; (completed)" width="1680"/>
+                <img src="3ce96211db9b85ee32ce0083308fd20eb90b07148d0a18d26a58d9a44b7a54a5.png" title=" When John submits his search details:
 | place | startingAfterDays | vacationDaysNumber | numberOfAdults | numberOfKids |
 | Bali, Indonesia | 5 | 7 | 2 | 1 |" width="1680"/>
-                <img src="0e1b7c27533d82061382f5bb5ff9559d138c8b83bb6c9c966f376d963da085ee.png" title=" Accept all cookies" width="1680"/>
-                <img src="6379cf320cba2f00f01a742271b427ea760f3144fd86d9f6e4ca663f503804de.png" title=" Prepare searching details: Reservation{, place='Bali, Indonesia', checkin='0', checkout='0', adults=2, kids=1}" width="1680"/>
-                <img src="6379cf320cba2f00f01a742271b427ea760f3144fd86d9f6e4ca663f503804de.png" title=" Fills field with data: ReservationWidget.placeField, Bali, Indonesia" width="1680"/>
-                <img src="9fabba682fb3ac45c53f3883c5eba44b0f25a18ca6c4a80229f6778e94fb47cd.png" title=" Clicks on: ReservationWidget.selectDestinationFromDropDown" width="1680"/>
-                <img src="16a9dae8aa7f336cfec872fb866d0ec7ca2e394d8d47280a31cb508c2eff9791.png" title=" Clicks on: ReservationWidget.guestsPickerDropDown" width="1680"/>
-                <img src="5e0f14efe5e0e3457ddf5cd52a79e35271815b6ab094f96cea23199a89e0bb7b.png" title=" Clicks on multiple times: ReservationWidget.addAdultButton, 2" width="1680"/>
-                <img src="d9acb90bff0644ff16886d950c6145d7526e733dd4a3c6f01dd7c2d9b4d81862.png" title=" Clicks on multiple times: ReservationWidget.addKidButton, 1" width="1680"/>
+                <img src="3ce96211db9b85ee32ce0083308fd20eb90b07148d0a18d26a58d9a44b7a54a5.png" title=" Accept all cookies" width="1680"/>
+                <img src="feb747a55d906ba7b9a275e3965e0ec898cf809a9f08317f1ecc90aba173664a.png" title=" Prepare searching details: Reservation{, place='Bali, Indonesia', checkin='0', checkout='0', adults=2, kids=1}" width="1680"/>
+                <img src="feb747a55d906ba7b9a275e3965e0ec898cf809a9f08317f1ecc90aba173664a.png" title=" Fills field with data: ReservationWidget.placeField, Bali, Indonesia" width="1680"/>
+                <img src="4f70ba6e22602dc33792589f67a90249fb28625560059ac323b06c63b8b54f3a.png" title=" Clicks on: ReservationWidget.selectDestinationFromDropDown" width="1680"/>
+                <img src="532e9a43d45efa3662c788730392d073f72c882aa933b80eb0c0f0ffc34eccb2.png" title=" Clicks on: ReservationWidget.guestsPickerDropDown" width="1680"/>
+                <img src="eb27f79e2a89ef9edf904f53ae1946ef029ebc17a0613e8c58485db7b921a545.png" title=" Clicks on multiple times: ReservationWidget.addAdultButton, 2" width="1680"/>
+                <img src="a7cd9c0de2683247fdbcf976317b59fcb6fa34f8dfeff1b689d7660edba2b9be.png" title=" Clicks on multiple times: ReservationWidget.addKidButton, 1" width="1680"/>
                 <img src="1fb752fdbb705547cca1ff779fd356c3a85fcd11982f38c10bd88f39bf3d6e84.png" title=" Clicks on: ReservationWidget.submitReservationFormButton" width="1680"/>
                 <img src="1fb752fdbb705547cca1ff779fd356c3a85fcd11982f38c10bd88f39bf3d6e84.png" title=" Prepare searching details: Reservation{, place='Bali, Indonesia', checkin='0', checkout='0', adults=2, kids=1} (completed)" width="1680"/>
                 <img src="1fb752fdbb705547cca1ff779fd356c3a85fcd11982f38c10bd88f39bf3d6e84.png" title=" When John submits his search details:
 | place | startingAfterDays | vacationDaysNumber | numberOfAdults | numberOfKids |
 | Bali, Indonesia | 5 | 7 | 2 | 1 | (completed)" width="1680"/>
-                <img src="18f1c8bf7ed6d9181cd63f3cd9205dadf922918d7c26e4f367211bb699a3b344.png" title=" And he sets the price range from &quot;50&quot; to &quot;100&quot; euro" width="1680"/>
-                <img src="18f1c8bf7ed6d9181cd63f3cd9205dadf922918d7c26e4f367211bb699a3b344.png" title=" Choose price range: 50, 100" width="1680"/>
-                <img src="18f1c8bf7ed6d9181cd63f3cd9205dadf922918d7c26e4f367211bb699a3b344.png" title=" Clicks on: ListOfOffersPage.expandPriceRangeMenuItemButton" width="1680"/>
-                <img src="663f0754e0690da1827ef394e02fe7297e9797bbbcbe5a391da20cb9c869339a.png" title=" Fills field with data: ListOfOffersPage.fromPriceField, 50" width="1680"/>
-                <img src="15c167f48eaa00743c4dd9f3baa9726382eef4597a8cfc8eb15a9896c1ed905a.png" title=" Fills field with data: ListOfOffersPage.toPriceField, 100" width="1680"/>
-                <img src="2aae2a8747ff2b5ed66a54d66a44dd61c01eb9bc8e5d0870b7c56a588f5b167c.png" title=" Clicks on: ListOfOffersPage.savePriceFromMenuItemButton" width="1680"/>
-                <img src="2aae2a8747ff2b5ed66a54d66a44dd61c01eb9bc8e5d0870b7c56a588f5b167c.png" title=" Choose price range: 50, 100 (completed)" width="1680"/>
-                <img src="2aae2a8747ff2b5ed66a54d66a44dd61c01eb9bc8e5d0870b7c56a588f5b167c.png" title=" And he sets the price range from &quot;50&quot; to &quot;100&quot; euro (completed)" width="1680"/>
-                <img src="f8e435a22c23d66eaae0d0af13caee32879321aa25c701b157e8cfe6aff5fe9b.png" title=" And he searches for a place with parameters:
+                <img src="f833660c192ea4ece4a5a3211925b755ba04411f45caba6b505fb78c36a6ddae.png" title=" And he sets the price range from &quot;50&quot; to &quot;100&quot; euro" width="1680"/>
+                <img src="f833660c192ea4ece4a5a3211925b755ba04411f45caba6b505fb78c36a6ddae.png" title=" Choose price range: 50, 100" width="1680"/>
+                <img src="f833660c192ea4ece4a5a3211925b755ba04411f45caba6b505fb78c36a6ddae.png" title=" Clicks on: ListOfOffersPage.expandPriceRangeMenuItemButton" width="1680"/>
+                <img src="7c9a06374c5bcfa059f7a31cb3e60ac0b3d4d8b228a966cd040572b183cc2724.png" title=" Fills field with data: ListOfOffersPage.fromPriceField, 50" width="1680"/>
+                <img src="3299b1e9fd662b3625933d00adbdc68b8287660262b060bcdf17ac1fed3baff9.png" title=" Fills field with data: ListOfOffersPage.toPriceField, 100" width="1680"/>
+                <img src="29a347692bb5ef2e1fe0733b1ad898d1e6fa009f78f3fd473be775e92be728aa.png" title=" Clicks on: ListOfOffersPage.savePriceFromMenuItemButton" width="1680"/>
+                <img src="29a347692bb5ef2e1fe0733b1ad898d1e6fa009f78f3fd473be775e92be728aa.png" title=" Choose price range: 50, 100 (completed)" width="1680"/>
+                <img src="29a347692bb5ef2e1fe0733b1ad898d1e6fa009f78f3fd473be775e92be728aa.png" title=" And he sets the price range from &quot;50&quot; to &quot;100&quot; euro (completed)" width="1680"/>
+                <img src="03e4b73e732153c13d77a5a5a985f9a5582766afb924deafc1370ac88df8c0d1.png" title=" And he searches for a place with parameters:
 | numberOfBathrooms | airConditioner | jacuzzi |
 | 1 | true | true |" width="1680"/>
-                <img src="f8e435a22c23d66eaae0d0af13caee32879321aa25c701b157e8cfe6aff5fe9b.png" title=" Choose more filters: entities.MoreFiltersDetails@29c1249a" width="1680"/>
-                <img src="f8e435a22c23d66eaae0d0af13caee32879321aa25c701b157e8cfe6aff5fe9b.png" title=" Clicks on: ListOfOffersPage.expandMoreFiltersButton" width="1680"/>
-                <img src="1333f5b3f4f8beac204c7ee992105f3f7164784f8431654b084d47a2f4218637.png" title=" Clicks on multiple times: MoreFiltersWidget.addBathroomButton, 1" width="1680"/>
-                <img src="e2e0b165c7b2cc2eb95e74f9c10559719eb0e4166485d3494ad585be15b6ae28.png" title=" Select filter checkbox: MoreFiltersWidget.airConditionerCheckBox, true" width="1680"/>
-                <img src="4841e950874ca3be78f756e6f5c157e5fff29f15c82db9ba9ead654e0924a379.png" title=" Select filter checkbox: MoreFiltersWidget.jacuzziCheckBox, true" width="1680"/>
-                <img src="63f3510f14f4f75945e84c933bb677bf3a5ba707df71fb8ee2e192164c71e41f.png" title=" Clicks on: MoreFiltersWidget.saveMoreFiltersButton" width="1680"/>
-                <img src="63f3510f14f4f75945e84c933bb677bf3a5ba707df71fb8ee2e192164c71e41f.png" title=" Choose more filters: entities.MoreFiltersDetails@29c1249a (completed)" width="1680"/>
-                <img src="63f3510f14f4f75945e84c933bb677bf3a5ba707df71fb8ee2e192164c71e41f.png" title=" And he searches for a place with parameters:
+                <img src="03e4b73e732153c13d77a5a5a985f9a5582766afb924deafc1370ac88df8c0d1.png" title=" Choose more filters: entities.MoreFiltersDetails@29c1249a" width="1680"/>
+                <img src="03e4b73e732153c13d77a5a5a985f9a5582766afb924deafc1370ac88df8c0d1.png" title=" Clicks on: ListOfOffersPage.expandMoreFiltersButton" width="1680"/>
+                <img src="24759e3f6fb951482a4f6c346c037b5b40ad90a6809f459781807b3d73508f97.png" title=" Clicks on multiple times: MoreFiltersWidget.addBathroomButton, 1" width="1680"/>
+                <img src="2ab2e0e5f34903450b0f6a19548b1868c1f90507140fa91a87982871230e2146.png" title=" Select filter checkbox: MoreFiltersWidget.airConditionerCheckBox, true" width="1680"/>
+                <img src="267871f0f85ec941730b9efc52605c35c018d9f57f2e3a3c52d520e01dc5fcf8.png" title=" Select filter checkbox: MoreFiltersWidget.jacuzziCheckBox, true" width="1680"/>
+                <img src="c15bdefd404d7d5d560b6f7ae1969b5927d5e7e819df17e5899b476f8665fc0d.png" title=" Clicks on: MoreFiltersWidget.saveMoreFiltersButton" width="1680"/>
+                <img src="c15bdefd404d7d5d560b6f7ae1969b5927d5e7e819df17e5899b476f8665fc0d.png" title=" Choose more filters: entities.MoreFiltersDetails@29c1249a (completed)" width="1680"/>
+                <img src="c15bdefd404d7d5d560b6f7ae1969b5927d5e7e819df17e5899b476f8665fc0d.png" title=" And he searches for a place with parameters:
 | numberOfBathrooms | airConditioner | jacuzzi |
 | 1 | true | true | (completed)" width="1680"/>
-                <img src="fd1f7d4ddc093c3b70a226f724dd441750dc98c50ec345d45a026c2f0a91e5b0.png" title=" And he selects the first offer with &quot;5.0&quot; stars" width="1680"/>
-                <img src="fd1f7d4ddc093c3b70a226f724dd441750dc98c50ec345d45a026c2f0a91e5b0.png" title=" Select offer by rating: 5.0" width="1680"/>
-                <img src="f79e331e60de5ef604cf623631b5565408677a4055acb26acc354d4638bce6bc.png" title=" Navigate to last tab" width="1680"/>
-                <img src="f79e331e60de5ef604cf623631b5565408677a4055acb26acc354d4638bce6bc.png" title=" And he selects the first offer with &quot;5.0&quot; stars (completed)" width="1680"/>
-                <img src="494209e1f624364673b8c7b323ff123042e258ac79dce137235802f9ccca1fa8.png" title=" Then the selected period and guests number is displayed correctly" width="1680"/>
-                <img src="494209e1f624364673b8c7b323ff123042e258ac79dce137235802f9ccca1fa8.png" title=" And the total calculated price is according to the days" width="1680"/>
-                <img src="494209e1f624364673b8c7b323ff123042e258ac79dce137235802f9ccca1fa8.png" title=" Reads text from: By.xpath: .//span[contains(text(),'Total')]/parent::li" width="1680"/>
-                <img src="494209e1f624364673b8c7b323ff123042e258ac79dce137235802f9ccca1fa8.png" title=" Reads text from: By.xpath: .//span[contains(text(),'Total')]/parent::li (completed)" width="1680"/>
-                <img src="494209e1f624364673b8c7b323ff123042e258ac79dce137235802f9ccca1fa8.png" title=" And the total calculated price is according to the days (completed): <span class='success-color'>SUCCESS</span>" width="1680"/>
+                <img src="59ee04f3455a458dbe386c1faaa0f78934429115fb5ed36c8368598e184dbb25.png" title=" And he selects the first offer with &quot;5.0&quot; stars" width="1680"/>
+                <img src="59ee04f3455a458dbe386c1faaa0f78934429115fb5ed36c8368598e184dbb25.png" title=" Select offer by rating: 5.0" width="1680"/>
+                <img src="c2d0d51fa7c2a86805cb397ac707cf3cb29f9e594da54769a03c6b4ec9043ffa.png" title=" Navigate to last tab" width="1680"/>
+                <img src="c2d0d51fa7c2a86805cb397ac707cf3cb29f9e594da54769a03c6b4ec9043ffa.png" title=" And he selects the first offer with &quot;5.0&quot; stars (completed)" width="1680"/>
+                <img src="7cb609beb199a93751045b9345c92576d47879439c330a0239cf4087d2e23529.png" title=" Then the selected period and guests number is displayed correctly: <span class='error-color'>ERROR</span>" width="1680"/>
             </div>
         </div>
 
